@@ -17,14 +17,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css"
     />
     
-    <script type="module" crossorigin src="/assets/index.5f03ab81.js"></script>
+    <script type="module" crossorigin src="/assets/index.7fdd2349.js"></script>
     <link rel="modulepreload" href="/assets/vendor.fbe33d2b.js">
-    <link rel="stylesheet" href="/assets/index.d7f01efe.css">
+    <link rel="stylesheet" href="/assets/index.8c0995ea.css">
   </head>
   <body>
     <h1 class="page-title">PixiColorEffects</h1>
     <div class="center">
-      <canvas id="playground"></canvas>
+      <div class="playground-box">
+        <canvas id="playground"></canvas>
+
+        <div class="controls-box">
+          <label for="fileElem" id="upload">Upload an Img </label>
+          <button id="webcam">Use Webcam</button>
+        </div>
+        <input
+          type="file"
+          id="fileElem"
+          accept="image/*"
+          class="visually-hidden"
+        />
+      </div>
 
       <h1 style="margin-top: 24px">Preset</h1>
       <div id="presetBox"></div>
